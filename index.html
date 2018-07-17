@@ -18,12 +18,21 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
 <link rel="stylesheet" type="text/css" href="css/style11.css" /><!-- menu style sheet -->
 <link href="css/style.css" type="text/css" rel="stylesheet" media="all"> 
+<link href="css/animate.css" type="text/css" rel="stylesheet" media="all">
 <!-- //Custom Theme files -->
 <!-- font-awesome icons -->
 <link href="css/font-awesome.css" rel="stylesheet" type="text/css" media="all" /> 
 <!-- //font-awesome icons -->
 
-<!-- web-fonts -->  
+	<!--owl-->
+    <link href="css/owl.carousel.min.css" rel="stylesheet" />
+    <link href="css/owl.theme.default.min.css" rel="stylesheet"/>
+	<!--owl-->
+
+	<!--rating-->
+	<link href="css/rating.css" rel="stylesheet" />
+	<!--rating-->
+    <!-- web-fonts -->
 <link href="//fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
 <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
 <!-- //web-fonts -->
@@ -46,26 +55,25 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		</div>
 
 		<section class="header-w3ls">
-			<a href="index.html" class="navbar-brand logo">
+			<a href="index.html" class="navbar-brand logo animated-logo bounce-logo">
 				<i class="fa fa-flask"></i>
 				<span>uilabs</span>
 			</a>
 
 			<button id="trigger-overlay" class="header-item last_item" type="button"><i class="fa fa-bars" aria-hidden="true"></i></button>
 			<span class="separator"></span>
-			<!--<button class="header-item" type="button"><i class="fa fa-search" aria-hidden="true"></i></button>-->
-			<input type="text" class="header-item search-box " onmouseout="style.borderColor='#ddd';"placeholder="Tìm kiếm ">
+			<button class="header-item" type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
+			<!--<input type="text" class="header-item search-box " onmouseout="style.borderColor='#ddd';"placeholder="Tìm kiếm ">-->
 			<div class="clearfix"> </div>
 		</section>
 	<!-- //menu -->
 
 	<!-- banner -->
 		<div class="banner-silder">
-				<div class="callbacks_container">
-					<ul class="rslides callbacks callbacks1" id="slider4">
+				<div class="callbacks_container ">
+					<ul class="rslides callbacks callbacks1 owl-carousel" id="slider4">
 						<li>
 							<div class="w3layouts-banner-top">
-
 								<div class="container">
 									<div class="agileits-banner-info">
 										<h3>Sale Fashion Store</h3>
@@ -110,151 +118,151 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			<div class="title-line"></div>
 
 			<div class="row collections">
-				<div class="col-5 col-lg-3 col-xl-2 card item">
-					<img class="card-img-top" src="./images/bag.jpeg" alt="Card image cap">
+				<div class="col-5 col-lg-3 col-xl-2 card item wow rubberBand">
+					<img class="card-img-top" src="./images/bag.jpeg" alt="Card image cap" data-toggle="modal" data-target="#lightbox">
 					<div class="card-body">
 						<p class="card-title item-title">Modern Bag</p>
-						<div class="start-vote">
-							<i class="fa fa-star" aria-hidden="true"></i>
-							<i class="fa fa-star" aria-hidden="true"></i>
-							<i class="fa fa-star" aria-hidden="true"></i>
-							<i class="fa fa-star" aria-hidden="true"></i>
-							<i class="fa fa-star-half-o" aria-hidden="true"></i>
+						<div class="star-rating">
+							<input type="radio" name="example" class="rating" value="1" />
+							<input type="radio" name="example" class="rating" value="2" />
+							<input type="radio" name="example" class="rating" value="3" />
+							<input type="radio" name="example" class="rating" value="4" />
+							<input type="radio" name="example" class="rating" value="5" />
 						</div>
 						<h5 class="card-text item-prizes">$34</h5>
 					</div>
 					<a class="btn btn-primary">ADD TO CARD</a>
 				</div>
-				<div class="col-5 col-lg-3 col-xl-2 card item">
-					<img class="card-img-top" src="./images/bag.jpeg" alt="Card image cap">
+				<div class="col-5 col-lg-3 col-xl-2 card item wow shake">
+					<img class="card-img-top" src="./images/shoes.jpeg" alt="Card image cap"  data-toggle="modal" data-target="#lightbox">
 					<div class="card-body">
-						<p class="card-title item-title">Modern Bag</p>
-						<div class="start-vote">
-							<i class="fa fa-star" aria-hidden="true"></i>
-							<i class="fa fa-star" aria-hidden="true"></i>
-							<i class="fa fa-star" aria-hidden="true"></i>
-							<i class="fa fa-star" aria-hidden="true"></i>
-							<i class="fa fa-star-half-o" aria-hidden="true"></i>
+						<p class="card-title item-title">Super Modern Shoes</p>
+						<div class="star-rating">
+							<input type="radio" name="example" class="rating" value="1" />
+							<input type="radio" name="example" class="rating" value="2" />
+							<input type="radio" name="example" class="rating" value="3" />
+							<input type="radio" name="example" class="rating" value="4" />
+							<input type="radio" name="example" class="rating" value="5" />
+						</div>
+						<h5 class="card-text item-prizes">$344</h5>
+					</div>
+					<a class="btn btn-primary">ADD TO CARD</a>
+				</div>
+				<div class="col-5 col-lg-3 col-xl-2 card item wow swing">
+					<img class="card-img-top" src="./images/clothes.jpg" alt="Card image cap"  data-toggle="modal" data-target="#lightbox">
+					<div class="card-body">
+						<p class="card-title item-title">Silk Clothes</p>
+						<div class="star-rating">
+							<input type="radio" name="example" class="rating" value="1" />
+							<input type="radio" name="example" class="rating" value="2" />
+							<input type="radio" name="example" class="rating" value="3" />
+							<input type="radio" name="example" class="rating" value="4" />
+							<input type="radio" name="example" class="rating" value="5" />
+						</div>
+						<h5 class="card-text item-prizes">$14</h5>
+					</div>
+					<a class="btn btn-primary">ADD TO CARD</a>
+				</div>
+				<div class="col-5 col-lg-3 col-xl-2 card item wow tada">
+					<img class="card-img-top" src="./images/caogot.jpg" alt="Card image cap"  data-toggle="modal" data-target="#lightbox">
+					<div class="card-body">
+						<p class="card-title item-title">Super Super Caogot</p>
+						<div class="star-rating">
+							<input type="radio" name="example" class="rating" value="1" />
+							<input type="radio" name="example" class="rating" value="2" />
+							<input type="radio" name="example" class="rating" value="3" />
+							<input type="radio" name="example" class="rating" value="4" />
+							<input type="radio" name="example" class="rating" value="5" />
+						</div>
+						<h5 class="card-text item-prizes">$24</h5>
+					</div>
+					<a class="btn btn-primary">ADD TO CARD</a>
+				</div>
+				<div class="col-5 col-lg-3 col-xl-2 card item wow tada">
+					<img class="card-img-top" src="./images/product1.jpg" alt="Card image cap"  data-toggle="modal" data-target="#lightbox">
+					<div class="card-body">
+						<p class="card-title item-title">Vay thoi trang</p>
+						<div class="star-rating">
+							<input type="radio" name="example" class="rating" value="1" />
+							<input type="radio" name="example" class="rating" value="2" />
+							<input type="radio" name="example" class="rating" value="3" />
+							<input type="radio" name="example" class="rating" value="4" />
+							<input type="radio" name="example" class="rating" value="5" />
+						</div>
+						<h5 class="card-text item-prizes">$134</h5>
+					</div>
+					<a class="btn btn-primary">ADD TO CARD</a>
+				</div>
+				<div class="col-5 col-lg-3 col-xl-2 card item wow fadeInRight">
+					<img class="card-img-top" src="./images/product2.jpeg" alt="Card image cap" data-toggle="modal" data-target="#lightbox">
+					<div class="card-body">
+						<p class="card-title item-title">Tui cute</p>
+						<div class="star-rating">
+							<input type="radio" name="example" class="rating" value="1" />
+							<input type="radio" name="example" class="rating" value="2" />
+							<input type="radio" name="example" class="rating" value="3" />
+							<input type="radio" name="example" class="rating" value="4" />
+							<input type="radio" name="example" class="rating" value="5" />
 						</div>
 						<h5 class="card-text item-prizes">$34</h5>
 					</div>
 					<a class="btn btn-primary">ADD TO CARD</a>
 				</div>
-				<div class="col-5 col-lg-3 col-xl-2 card item">
-					<img class="card-img-top" src="./images/bag.jpeg" alt="Card image cap">
+				<div class="col-5 col-lg-3 col-xl-2 card item wow bounce">
+					<img class="card-img-top" src="./images/product3.jpg" alt="Card image cap" data-toggle="modal" data-target="#lightbox">
 					<div class="card-body">
-						<p class="card-title item-title">Modern Bag</p>
-						<div class="start-vote">
-							<i class="fa fa-star" aria-hidden="true"></i>
-							<i class="fa fa-star" aria-hidden="true"></i>
-							<i class="fa fa-star" aria-hidden="true"></i>
-							<i class="fa fa-star" aria-hidden="true"></i>
-							<i class="fa fa-star-half-o" aria-hidden="true"></i>
+						<p class="card-title item-title">Tui again</p>
+						<div class="star-rating">
+							<input type="radio" name="example" class="rating" value="1" />
+							<input type="radio" name="example" class="rating" value="2" />
+							<input type="radio" name="example" class="rating" value="3" />
+							<input type="radio" name="example" class="rating" value="4" />
+							<input type="radio" name="example" class="rating" value="5" />
 						</div>
 						<h5 class="card-text item-prizes">$34</h5>
 					</div>
 					<a class="btn btn-primary">ADD TO CARD</a>
 				</div>
-				<div class="col-5 col-lg-3 col-xl-2 card item">
-					<img class="card-img-top" src="./images/bag.jpeg" alt="Card image cap">
+				<div class="col-5 col-lg-3 col-xl-2 card item wow jello">
+					<img class="card-img-top" src="./images/product4.jpeg" alt="Card image cap" data-toggle="modal" data-target="#lightbox">
 					<div class="card-body">
-						<p class="card-title item-title">Modern Bag</p>
-						<div class="start-vote">
-							<i class="fa fa-star" aria-hidden="true"></i>
-							<i class="fa fa-star" aria-hidden="true"></i>
-							<i class="fa fa-star" aria-hidden="true"></i>
-							<i class="fa fa-star" aria-hidden="true"></i>
-							<i class="fa fa-star-half-o" aria-hidden="true"></i>
+						<p class="card-title item-title">Giay vai</p>
+						<div class="star-rating">
+							<input type="radio" name="example" class="rating" value="1" />
+							<input type="radio" name="example" class="rating" value="2" />
+							<input type="radio" name="example" class="rating" value="3" />
+							<input type="radio" name="example" class="rating" value="4" />
+							<input type="radio" name="example" class="rating" value="5" />
+						</div>
+						<h5 class="card-text item-prizes">$2234</h5>
+					</div>
+					<a class="btn btn-primary">ADD TO CARD</a>
+				</div>
+				<div class="col-5 col-lg-3 col-xl-2 card item wow flipInY">
+					<img class="card-img-top" src="./images/product5.jpeg" alt="Card image cap" data-toggle="modal" data-target="#lightbox">
+					<div class="card-body">
+						<p class="card-title item-title">Tui Hong duyen dang</p>
+						<div class="star-rating">
+							<input type="radio" name="example" class="rating" value="1" />
+							<input type="radio" name="example" class="rating" value="2" />
+							<input type="radio" name="example" class="rating" value="3" />
+							<input type="radio" name="example" class="rating" value="4" />
+							<input type="radio" name="example" class="rating" value="5" />
 						</div>
 						<h5 class="card-text item-prizes">$34</h5>
 					</div>
 					<a class="btn btn-primary">ADD TO CARD</a>
 				</div>
-				<div class="col-5 col-lg-3 col-xl-2 card item">
-					<img class="card-img-top" src="./images/bag.jpeg" alt="Card image cap">
+				<div class="col-5 col-lg-3 col-xl-2 card item wow jackInTheBox">
+					<img class="card-img-top" src="./images/product6.jpg" alt="Card image cap" data-toggle="modal" data-target="#lightbox">
 					<div class="card-body">
-						<p class="card-title item-title">Modern Bag</p>
-						<div class="start-vote">
-							<i class="fa fa-star" aria-hidden="true"></i>
-							<i class="fa fa-star" aria-hidden="true"></i>
-							<i class="fa fa-star" aria-hidden="true"></i>
-							<i class="fa fa-star" aria-hidden="true"></i>
-							<i class="fa fa-star-half-o" aria-hidden="true"></i>
-						</div>
-						<h5 class="card-text item-prizes">$34</h5>
-					</div>
-					<a class="btn btn-primary">ADD TO CARD</a>
-				</div>
-				<div class="col-5 col-lg-3 col-xl-2 card item">
-					<img class="card-img-top" src="./images/bag.jpeg" alt="Card image cap">
-					<div class="card-body">
-						<p class="card-title item-title">Modern Bag</p>
-						<div class="start-vote">
-							<i class="fa fa-star" aria-hidden="true"></i>
-							<i class="fa fa-star" aria-hidden="true"></i>
-							<i class="fa fa-star" aria-hidden="true"></i>
-							<i class="fa fa-star" aria-hidden="true"></i>
-							<i class="fa fa-star-half-o" aria-hidden="true"></i>
-						</div>
-						<h5 class="card-text item-prizes">$34</h5>
-					</div>
-					<a class="btn btn-primary">ADD TO CARD</a>
-				</div>
-				<div class="col-5 col-lg-3 col-xl-2 card item">
-					<img class="card-img-top" src="./images/bag.jpeg" alt="Card image cap">
-					<div class="card-body">
-						<p class="card-title item-title">Modern Bag</p>
-						<div class="start-vote">
-							<i class="fa fa-star" aria-hidden="true"></i>
-							<i class="fa fa-star" aria-hidden="true"></i>
-							<i class="fa fa-star" aria-hidden="true"></i>
-							<i class="fa fa-star" aria-hidden="true"></i>
-							<i class="fa fa-star-half-o" aria-hidden="true"></i>
-						</div>
-						<h5 class="card-text item-prizes">$34</h5>
-					</div>
-					<a class="btn btn-primary">ADD TO CARD</a>
-				</div>
-				<div class="col-5 col-lg-3 col-xl-2 card item">
-					<img class="card-img-top" src="./images/bag.jpeg" alt="Card image cap">
-					<div class="card-body">
-						<p class="card-title item-title">Modern Bag</p>
-						<div class="start-vote">
-							<i class="fa fa-star" aria-hidden="true"></i>
-							<i class="fa fa-star" aria-hidden="true"></i>
-							<i class="fa fa-star" aria-hidden="true"></i>
-							<i class="fa fa-star" aria-hidden="true"></i>
-							<i class="fa fa-star-half-o" aria-hidden="true"></i>
-						</div>
-						<h5 class="card-text item-prizes">$34</h5>
-					</div>
-					<a class="btn btn-primary">ADD TO CARD</a>
-				</div>
-				<div class="col-5 col-lg-3 col-xl-2 card item">
-					<img class="card-img-top" src="./images/bag.jpeg" alt="Card image cap">
-					<div class="card-body">
-						<p class="card-title item-title">Modern Bag</p>
-						<div class="start-vote">
-							<i class="fa fa-star" aria-hidden="true"></i>
-							<i class="fa fa-star" aria-hidden="true"></i>
-							<i class="fa fa-star" aria-hidden="true"></i>
-							<i class="fa fa-star" aria-hidden="true"></i>
-							<i class="fa fa-star-half-o" aria-hidden="true"></i>
-						</div>
-						<h5 class="card-text item-prizes">$34</h5>
-					</div>
-					<a class="btn btn-primary">ADD TO CARD</a>
-				</div>
-				<div class="col-5 col-lg-3 col-xl-2 card item">
-					<img class="card-img-top" src="./images/bag.jpeg" alt="Card image cap">
-					<div class="card-body">
-						<p class="card-title item-title">Modern Bag</p>
-						<div class="start-vote">
-							<i class="fa fa-star" aria-hidden="true"></i>
-							<i class="fa fa-star" aria-hidden="true"></i>
-							<i class="fa fa-star" aria-hidden="true"></i>
-							<i class="fa fa-star" aria-hidden="true"></i>
-							<i class="fa fa-star-half-o" aria-hidden="true"></i>
+						<p class="card-title item-title">Giay xin</p>
+						<div class="star-rating">
+							<input type="radio" name="example" class="rating" value="1" />
+							<input type="radio" name="example" class="rating" value="2" />
+							<input type="radio" name="example" class="rating" value="3" />
+							<input type="radio" name="example" class="rating" value="4" />
+							<input type="radio" name="example" class="rating" value="5" />
 						</div>
 						<h5 class="card-text item-prizes">$34</h5>
 					</div>
@@ -264,7 +272,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 			<!--Pagination-->
 			<nav aria-label="Page navigation example">
-				<ul class="pagination justify-content-end">
+				<ul class="pagination justify-content-center">
 					<li class="page-item disabled">
 						<a class="page-link" tabindex="-1">First</a>
 					</li>
@@ -281,7 +289,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					<li class="page-item d-none d-lg-block"><a class="page-link">11</a></li>
 					<li class="page-item d-none d-lg-block"><a class="page-link">12</a></li>
 					<li class="page-item d-none d-xl-block"><a class="page-link">13</a></li>
-					<li class="page-item">
+					<li class="page-item disabled">
 						<a class="page-link">Last</a>
 					</li>
 				</ul>
@@ -289,6 +297,31 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			<!--Pagination-->
 		</div>
 	</div>
+
+		<div id="lightbox" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<button type="button" class="close hidden" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times" aria-hidden="true"></i></button>
+				<div class="modal-content">
+					<div class="modal-body">
+						<div class="card item">
+							<img class="card-img-top" src="" alt="">
+							<div class="card-body">
+								<p class="card-title item-title"></p>
+								<div class="start-vote">
+									<i class="fa fa-star" aria-hidden="true"></i>
+									<i class="fa fa-star" aria-hidden="true"></i>
+									<i class="fa fa-star" aria-hidden="true"></i>
+									<i class="fa fa-star" aria-hidden="true"></i>
+									<i class="fa fa-star-half-o" aria-hidden="true"></i>
+								</div>
+								<h5 class="card-text item-prizes"></h5>
+							</div>
+							<a class="btn btn-primary">ADD TO CARD</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
 	<!--//Services-->
 
@@ -341,48 +374,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <script src="js/jquery.nicescroll.js"></script>
 <script src="js/scripts.js"></script>
 
-<!--responsiveslides js-->
-<script src="js/responsiveslides.min.js"></script>
-			<script>
-						// You can also use "$(window).load(function() {"
-						$(function () {
-						  // Slideshow 4
-						  $("#slider4").responsiveSlides({
-							auto: true,
-							pager:true,
-							nav:false,
-							speed: 500,
-							namespace: "callbacks",
-							before: function () {
-							  $('.events').append("<li>before event fired.</li>");
-							},
-							after: function () {
-							  $('.events').append("<li>after event fired.</li>");
-							}
-						  });
-					
-						});
-			</script>
-			<script>
-							// You can also use "$(window).load(function() {"
-							$(function () {
-							  // Slideshow 3
-							  $("#slider3").responsiveSlides({
-								auto: true,
-								pager:false,
-								nav: true,
-								speed: 500,
-								namespace: "callbacks",
-								before: function () {
-								  $('.events').append("<li>before event fired.</li>");
-								},
-								after: function () {
-								  $('.events').append("<li>after event fired.</li>");
-								}
-							  });
-						
-							});
-						  </script>
+
 
 <!--//responsiveslides js-->
 <script src="js/SmoothScroll.min.js"></script>
@@ -392,8 +384,19 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <script src="js/demo1.js"></script>
 <!--//menu script-->
 <!-- banner -->
-<script type='text/javascript' src='js/jquery.easing.1.3.js'></script> 
+<script type='text/javascript' src='js/jquery.easing.1.3.js'></script>
 <!-- //banner -->
+
+	<!--lightbox-->
+	<script src="js/lightbox.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script>
+        new WOW().init();
+	</script>
+	<!--lightbox-->
+
+	<!--owl-->
+	<script src="js/owl.carousel.min.js"></script>
 <script type="text/javascript">
 	jQuery(document).ready(function($) {
 		$(".scroll").click(function(event){		
@@ -401,7 +404,25 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
 		});
 	});
+
+    $(document).ready(function(){
+        $(".owl-carousel").owlCarousel({
+            loop: true,
+            items: 1
+        });
+    });
 </script>
+	<!--owl-->
+
+<!--rating-->
+	<script src="js/rating.js"></script>
+	<script>
+		$(function(){
+			$('.star-rating').rating(); // Call the rating plugin
+		});
+	</script>
+	<!--rating-->
+
 <!--js for bootstrap working-->
 	<script src="js/bootstrap.js"></script>
 <!-- //for bootstrap working -->

@@ -50,6 +50,72 @@ p,ul li,ol li{
     margin-left: 43.5rem;
     margin-top: 0.7rem;
 }
+.modal-body{
+    padding-top: 2rem;
+}
+/*bouncing logo*/
+.animated-logo {
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+}
+@keyframes bounce {
+    0%, 100%, 20%, 50%, 80% {
+        -webkit-transform: translateY(0);
+        -ms-transform:     translateY(0);
+        transform:         translateY(0)
+    }
+    40% {
+        -webkit-transform: translateY(-30px);
+        -ms-transform:     translateY(-30px);
+        transform:         translateY(-30px)
+    }
+    60% {
+        -webkit-transform: translateY(-15px);
+        -ms-transform:     translateY(-15px);
+        transform:         translateY(-15px)
+    }
+}
+.bounce-logo:hover {
+    -webkit-animation-name: bounce;
+    -moz-animation-name: bounce;
+    animation-name: bounce;
+}
+/*bouncing logo*/
+/*lighbox*/
+#lightbox .modal-content {
+    display: inline-block;
+    text-align: center;
+}
+
+#lightbox .close {
+    opacity: 1;
+    color: rgb(255, 255, 255);
+    background-color: rgb(25, 25, 25);
+    padding: 5px 8px;
+    border-radius: 30px;
+    border: 2px solid rgb(255, 255, 255);
+    position: absolute;
+    top: 12px;
+    right: 11px;
+    z-index:1032;
+}
+#lightbox .item  a.btn{
+    margin: 0 3rem 1rem 3rem;
+}
+.modal-dialog{
+    min-width: 374px;
+}
+#lightbox .item .item-title{
+    font-size: 2rem;
+    font-weight: 500;
+}
+/*lighbox*/
 /*-- main --*/
 .main-row {
     height: 100%;
@@ -83,7 +149,7 @@ p,ul li,ol li{
     padding:10px 20px;
 }
 .header-w3ls i{
-    font-size: 22px;
+    font-size: 21px;
 }
 .header-w3ls .search-box{
     display: inline-block;
@@ -130,10 +196,10 @@ button.last_item{
     padding-right: 0;
 }
 .separator{
-    border-right: 1px solid hsla(0,0%,0%,.4);
-    height: 1.5rem;
+    border-right: 1px solid hsla(0,0%,60%,.4);
+    height: 1.1rem;
     float: right;
-    margin-top: 0.5rem;
+    margin-top: 0.9rem;
 }
 button.header-item i {
     color:black;
@@ -627,7 +693,7 @@ input.checkbox:checked:after {
     background-color: deeppink;
     border-color: deeppink;
 }
-.item img{
+.collections .item img{
     width: 120px;
     height: 145px;
     margin-bottom: 1rem;
@@ -638,19 +704,30 @@ input.checkbox:checked:after {
     padding-bottom: 0 !important;
 }
 .item .card-title{
-    margin-bottom: 0 !important;
+    margin-bottom: 5px !important;
 }
-.item .item-title{
+.collections .item .item-title{
     font-size: 1rem;
-    font-weight: 600;
+    font-weight: 500;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    line-height: 16px;     /* fallback */
+    max-height: 32px;      /* fallback */
+    -webkit-line-clamp: 1; /* number of lines to show */
+    -webkit-box-orient: vertical;
 }
-.item .start-vote i{
+.item .start-rating .start{
     color: rgb(232, 201, 1);
     margin-bottom: 0.5rem;
     font-size: 0.75rem;
 }
 .item .item-prizes {
     margin-bottom: 1rem;
+}
+.page-link{
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.25);
+    background: #E9F1F0!important;
 }
 /*--//Options--*/
 /*--about-inner--*/
@@ -1637,7 +1714,7 @@ option {
     line-height: 1.8em;
 }
 ul.pagination {
-    margin: 2em 0 0 19em;
+    margin: 2em 0 0 0;
 }
 ul.pagination li{
     margin-left: 1em;
@@ -2306,7 +2383,7 @@ h2.typoh2{
         margin-top: 0px;
         margin-bottom: 0px!important;
     }
-    .item img {
+    .collections .item img {
         margin-left: 0;
     }
     .grid_5 h3, .grid_5 h2, .grid_5 h1, .grid_5 h4, .grid_5 h5, h3.hdg, h3.bars {
@@ -2360,6 +2437,11 @@ h2.typoh2{
     }
     .pagination {
         margin: 20px 0 0px 4em;
+    }
+}
+@media (max-width: 380px){
+    .options-wthree .item{
+        margin-left: 1.7rem;
     }
 }
 @media (max-width: 320px){
