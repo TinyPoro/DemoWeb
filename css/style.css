@@ -31,6 +31,19 @@ ul,label{
 body a:hover{
     text-decoration:none;
 }
+.row{margin-left: 0px!important;}
+.card-body{padding: 1rem;}
+.navbar{
+    width: 52%;
+    display: inline-block;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+@media (max-width: 480px){
+    .navbar{
+        display: none;
+    }
+}
 .bg {
     background: #fff;
 }
@@ -150,31 +163,29 @@ p,ul li,ol li{
 }
 .header-w3ls i{
     font-size: 21px;
+    color: #1F44DC  ;
 }
-.header-w3ls .search-box{
-    display: inline-block;
-    margin-top: 0!important;
-    margin-right: 0.5rem;
-    padding: .375rem .75rem;
-    font-size: 1rem;
-    line-height: 1.4;
-    color: #ddd;
-    background-color: #fff;
-    background-clip: padding-box;
-    border: 1px solid #ddd;
+.header-w3ls .search-box{;
+    text-align: right;
     border-radius: 3rem;
-    transition: border-color .15s ease-in-out,box-shadow .15s;
-    background: url('../images/icon_search.png') no-repeat 96% 50%;
-    background-size: 25px 25px;
 }
-.search-box:active, .search-box:focus, .search-box:hover {
+.header-w3ls .search-box i{;
+    font-size: 18px;
+}
+.search-box:active i, .search-box:focus i, .search-box:hover i {
+    color: tomato;
+}
+.search-box:not(:focus) i {
+    color: black;
+}
+.search-box:focus{
+    margin-right: 0.5rem;
+    outline: none!important;
+    width: 14rem!important;
     border-color: #64D1F1  !important;
     border-width: .1rem;
     -webkit-box-shadow: 0 0 5px #A0CDDA;
     box-shadow: 0 0 5px #A0CDDA;
-}
-.search-box:focus{
-    width: 14rem!important;
 }
 .logo{
     padding: 5px 5px !important;
@@ -681,7 +692,7 @@ input.checkbox:checked:after {
 .options-wthree .item{
     border: 1px solid #e2e2e2;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.25);
-    margin-left: 2rem;
+    margin-left: 1.5rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
@@ -2002,8 +2013,7 @@ ul.pagination .active a, ul.pagination a:hover{
     color: #fff;
 }
 .agileinfo_footer_bottom_grid{
-    margin-top: 2rem;
-    padding-top: 2rem;
+    padding-top: 1.5rem;
 }
 .agileinfo_footer_bottom_grid h2,.agileinfo_footer_bottom_grid h3 {
     color: #fff;
