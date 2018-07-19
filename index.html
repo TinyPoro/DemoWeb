@@ -93,47 +93,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			<!--<input type="text" class="header-item search-box " onmouseout="style.borderColor='#ddd';"placeholder="Tìm kiếm ">-->
 			<div class="clearfix"> </div>
 		</section>
-		<!--<nav class="navbar navbar-expand-lg navbar-light bg-light ">-->
-			<!--<section style="width: 100%;" class="header-w3ls">-->
-				<!--<a href="index.html" class="navbar-brand logo animated-logo bounce-logo">-->
-					<!--<i class="fa fa-flask"></i>-->
-					<!--<span>uilabs</span>-->
-				<!--</a>-->
-
-				<!--<button id="trigger-overlay" class="header-item last_item" type="button"><i class="fa fa-bars" aria-hidden="true"></i></button>-->
-				<!--<span class="separator"></span>-->
-				<!--<button class="header-item search-box" type="button"><i class="fa fa-search" aria-hidden="true"></i></button>-->
-				<!--&lt;!&ndash;<input type="text" class="header-item search-box " onmouseout="style.borderColor='#ddd';"placeholder="Tìm kiếm ">&ndash;&gt;-->
-				<!--<div class="clearfix"> </div>-->
-			<!--</section>-->
-
-			<!--<div class="collapse navbar-collapse" id="navbarSupportedContent">-->
-				<!--<ul class="navbar-nav mr-auto">-->
-					<!--<li class="nav-item active">-->
-						<!--<a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>-->
-					<!--</li>-->
-					<!--<li class="nav-item">-->
-						<!--<a class="nav-link" href="#">Clothes</a>-->
-					<!--</li>-->
-					<!--<li class="nav-item">-->
-						<!--<a class="nav-link" href="#">Shoes</a>-->
-					<!--</li>-->
-					<!--<li class="nav-item">-->
-						<!--<a class="nav-link" href="#">Bags</a>-->
-					<!--</li>-->
-					<!--<li class="nav-item">-->
-						<!--<a class="nav-link" href="#">Hot</a>-->
-					<!--</li>-->
-					<!--<li class="nav-item">-->
-						<!--<a class="nav-link" href="#">Sales</a>-->
-					<!--</li>-->
-					<!--<li class="nav-item">-->
-						<!--<a class="nav-link" href="#">Contact</a>-->
-					<!--</li>-->
-				<!--</ul>-->
-			<!--</div>-->
-		<!--</nav>-->
-	<!-- //menu -->
 
 	<!-- banner -->
 		<div class="banner-silder">
@@ -182,7 +141,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<div class="options-wthree">
 		<div class="container-option">
 			<h3 class="title">Popular</h3>
-			<div class="title-line"></div>
 
 			<div class="row collections">
 				<div class="col-5 col-lg-3 col-xl-2 card item wow rubberBand">
@@ -448,7 +406,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!--menu script-->
 <script type="text/javascript" src="js/modernizr-2.6.2.min.js"></script>
 <script src="js/classie.js"></script>
-<script src="js/demo1.js"></script>
+<script src="js/trigger.js"></script>
 <!--//menu script-->
 <!-- banner -->
 <script type='text/javascript' src='js/jquery.easing.1.3.js'></script>
@@ -493,5 +451,17 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!--js for bootstrap working-->
 	<script src="js/bootstrap.js"></script>
 <!-- //for bootstrap working -->
+
+<script>
+	$('.page-item:not(.disabled)').click(function(){
+	    $('.page-item').removeClass('active');
+
+	    $(this).addClass('active');
+	})
+
+	$('#lightbox .close').click(function(){
+	    alert('a');
+	})
+</script>
 </body>
 </html>
